@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-upload-files-database" />
+        <module name="spring-boot-upload-file-database-master" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-upload-file-database-master" options="-parameters" />
       <module name="spring-boot-upload-files-database" options="-parameters" />
     </option>
   </component>

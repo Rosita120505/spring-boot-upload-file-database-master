@@ -30,7 +30,7 @@ public class FileController {
     String message = "";
     try {
       storageService.store(file);
-      File path = new File("D:\\File\\" + file.getOriginalFilename());
+      File path = new File("C:\\Users\\psm\\Documents\\FileUploadUser\\" + file.getOriginalFilename());
       path.createNewFile();
       message = "Uploaded the file successfully: " + file.getOriginalFilename();
       return ResponseEntity.status(HttpStatus.OK).body(new ResponseMessage(message));
